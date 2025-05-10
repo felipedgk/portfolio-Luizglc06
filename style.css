@@ -10,9 +10,6 @@ body {
   color: #e0e0e0;
   padding: 30px;
   scroll-behavior: smooth;
-}
-
-body {
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -39,12 +36,57 @@ header p {
   color: #9fbfdf;
 }
 
+section {
+  margin-bottom: 60px;
+  animation: fadeInUp 0.7s ease;
+}
+
 section h2 {
   font-size: 2rem;
   color: #4fc3f7;
   border-left: 5px solid #4fc3f7;
   padding-left: 15px;
   margin-bottom: 20px;
+}
+
+#specialties {
+  margin: 60px 0;
+}
+
+.specialty-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background: #121825;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #1e293b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
+  border-color: #4fc3f7;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #4fc3f7;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #cfd8dc;
+  font-size: 1rem;
 }
 
 .project {
@@ -118,10 +160,6 @@ footer {
   padding-top: 20px;
 }
 
-section {
-  animation: fadeInUp 0.7s ease;
-}
-
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -145,45 +183,9 @@ section {
   .project a {
     font-size: 0.9rem;
   }
-}
 
-#specialties {
-  margin: 60px 0;
+  .specialty-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
-
-.specialty-cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  background: #121825;
-  flex: 1;
-  min-width: 250px;
-  border-radius: 12px;
-  padding: 20px;
-  text-align: center;
-  border: 2px solid #1e293b;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.1);
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
-  border-color: #4fc3f7;
-}
-
-.card h3 {
-  font-size: 1.5rem;
-  color: #4fc3f7;
-  margin-bottom: 10px;
-}
-
-.card p {
-  color: #cfd8dc;
-  font-size: 1rem;
-}
-
